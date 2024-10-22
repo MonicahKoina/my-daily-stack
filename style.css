@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.listContainer{
+    text-align: center;
+    margin-top: 10%;
+}
+input{
+    border: none;
+    border-bottom: 2px solid black;
+    margin-top: 40px;
+    outline: none;
+}
+#add{
+    margin-left: 10px;
+    background-color: rgb(246, 247, 248);
+    color: rgb(19, 18, 18);
+    font-size: 30px;
+    border-radius: 10px;
+    border: none;
+   
+}
