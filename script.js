@@ -13,13 +13,20 @@ form.appendChild(button);
 const ul = document.createElement('ul')
 document.body.appendChild(ul)
 
+const removeElement = el => {
+    el.remove()
+}
+
 form.onsubmit = (event) => {
     event.preventDefault()
     const li = document.createElement('li')
     ul.appendChild(li)
     li.innerText = input.value
+    li.onclick = removeElement.bind(null, li)
     input.value = ''
 }
+
+
 // button.addEventListener( 'click', () => {
 
 // })
