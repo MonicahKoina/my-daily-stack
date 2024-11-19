@@ -1,9 +1,17 @@
 *{
-    box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-.listContainer{
+form{
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15%;
+}
+    /*
+*.listContainer{
     text-align: center;
     margin-top: 10%;
 }
@@ -21,4 +29,4 @@ input{
     border-radius: 10px;
     border: none;
    
-}
+} */

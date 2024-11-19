@@ -11,7 +11,7 @@ button.role = 'ADD'
 form.appendChild(button);
 
 const ul = document.createElement('ul')
-document.body.appendChild(ul)
+form.appendChild(ul)
 
 const removeElement = el => {
     el.remove()
@@ -22,7 +22,13 @@ form.onsubmit = (event) => {
     const li = document.createElement('li')
     ul.appendChild(li)
     li.innerText = input.value
-    li.onclick = removeElement.bind(null, li)
+    
+    const removeBtn = document.createElement('button');
+    removeBtn.innerText = 'Remove';
+    removeBtn.style.marginLeft = '10px';
+    removeBtn.onclick = () => removeElement(li);
+    li.appendChild(removeBtn);
+
     input.value = ''
 }
 
