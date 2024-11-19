@@ -1,6 +1,10 @@
 const form = document.createElement('form');
 document.body.appendChild(form);
 
+const h1 = document.createElement('h1')
+h1.innerHTML="TO DO LIST"
+form.appendChild(h1)
+
 const input = document.createElement('input');
 input.placeholder = 'TASKS';
 form.appendChild(input);

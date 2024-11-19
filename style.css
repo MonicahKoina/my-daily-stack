@@ -1,32 +1,46 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-form{
-    background-color: yellow;
+body{
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 15%;
 }
-    /*
-*.listContainer{
+form{
+    background-color: rgb(218, 202, 115);
+    padding: 20px;
+    border-radius: 8px;
     text-align: center;
-    margin-top: 10%;
-}
-input{
-    border: none;
-    border-bottom: 2px solid black;
+    width: 70%;
+    height: 80vh;
     margin-top: 40px;
-    outline: none;
 }
-#add{
-    margin-left: 10px;
-    background-color: rgb(246, 247, 248);
-    color: rgb(19, 18, 18);
-    font-size: 30px;
-    border-radius: 10px;
+input {
+    width: 40%;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 30px;
     border: none;
-   
-} */
+}
+button{
+margin: 6px;
+padding: 4px;
+border-radius: 20px;
+border: 2px solid rgb(53, 52, 52);
+background-color: rgb(253, 253, 253);
+}
+ul{
+    list-style: none;
+
+}
+li{
+    background-color: rgb(201, 175, 89);
+    width: 50%;
+    margin-left: 24%;
+    margin-top: 3%;
+}
+h1{
+    font-style: italic;
+}
+    
