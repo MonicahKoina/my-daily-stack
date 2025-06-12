@@ -3,8 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>My to-do</title>
+    <title>My Daily Stack</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css"
+    />
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .round-img {
+        height: 160px;
+        border-radius: 50%;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <img
+      src="assets/orange.jpg"
+      alt="money"
+      class="round-img no-border absolute top-5 left-5 hidden md:block"
+    />
+    <img
+      src="assets/study.jpg"
+      alt="study"
+      class="round-img no-border absolute top-10 right-5 hidden md:block"
+    />
+    <div class="flex justify-center mt-24">
+      <div
+        class="paper container w-[90vw] md:w-[70vw] p-6 relative text-center"
+      >
+        <h1 class="text-4xl font-bold mb-4">MY DAILY STACK</h1>
+        <img
+          src="assets/clock.jpg"
+          alt="timer"
+          class="round-img no-border absolute top-4 right-4 hidden md:block"
+        />
+        <img
+          src="assets/task.jpg"
+          alt="person"
+          class="round-img no-border absolute bottom-4 left-4 hidden md:block"
+        />
+        <p class="text-lg text-gray-700 mb-4">
+          Plan your day like a pro!<br />
+          From tasks, meals, learning and budget in one place.
+        </p>
+        <div class="flex justify-center">
+          <button
+            class="bg-yellow-100 hover:bg-yellow-500 px-6 py-2 font-semibold shadow"
+          >
+            Get started ->
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center mt-10">
+      <img src="assets/work.jpg" alt="work" class="round-img no-border" />
+    </div>
+  </body>
 </html>
