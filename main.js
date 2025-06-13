@@ -6,7 +6,7 @@ function showModal() {
         <div class="modal-body">  
           <h4 class="modal-title">What would you like to create?</h4>
           <div class="flex flex-col gap-2 my-4">
-        <button onclick="window.location.href='/dailyRoutine/index.html'" class="btn-secondary-outline">Daily routine</button>
+        <button onclick="window.location.href='/dailyRoutine/daily.html'" class="btn-secondary-outline">Daily routine</button>
             <button onClick="window.location.href='/mealPlan/index.html'"  class="btn-secondary-outline">Meal Plan</button>
             <button  onClick="window.location.href='/budgetPlan/index.html'"class="btn-secondary-outline">Budget Plan</button>
             <button onClick="window.location.href='/studyPlan/index.html'" class="btn-secondary-outline">Study Plan</button>
