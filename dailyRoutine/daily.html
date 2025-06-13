@@ -34,7 +34,7 @@
         <p>13/06/2025</p>
       </div>
       <p class="mt-2">Go ahead and plan your day and remember Small progress is still progress!</p>
-      <form class="mt-4 p-2">
+      <form class="mt-4 p-2" id="taskForm">
         <div class="flex gap-2">
           <input
             type="text"
@@ -42,18 +42,35 @@
             id="addTask"
             placeholder="task name"
             class="w-20"
-          />
-          <input
+          /> 
+          <div class="flex gap-1">
+            <label for="time">From:</label>
+           <input
             type="text"
             name="time"
-            id="time"
+            id="fromTime"
             placeholder="time"
             class="w-16"
-          />
-          <button>add <i class='bxr  bx-plus-circle'  style='color:#161614'></i></i> </button>
+          /> 
+          <label for="time">To:</label>
+          <input
+          type="text"
+          name="time"
+          id="toTime"
+          placeholder="time"
+          class="w-16"
+        /> 
+          </div>
+          <select id="priority" class="ml-2">
+      <option value="Important">Important</option>
+      <option value="Less Important">Less Important</option>
+      <option value="Not Important">Not Important</option>
+    </select>
+          
+          <button type="submit">add <i class='bxr  bx-plus-circle'  style='color:#161614'></i></i> </button>
         </div>
       </form>
-      <table>
+      <table id="taskTable">
        <thead>
         <tr>
             <th>Check </th>
@@ -68,12 +85,13 @@
                 <button><i class='bxr  bxs-check'  style='color:#000000'></i>  </button>
             </td>
             <td>Meditate</td>
-            <td>10:00am-11:00am</td>
+            <td>10:00am-11:00a</td>
             <td>Important</td>
         </tr>
        </tbody>
       </table>
 
     </div>
+    <script src="daily.js"></script>
   </body>
 </html>
