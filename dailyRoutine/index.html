@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css"
+    />
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>My daily routine</title>
+    
+  </head>
+  <body>
+    <figure class="flex justify-center">
+        <img src="/assets/star.png" alt="star icon" 
+        class=" sm:block  border-0 md:h-40 md:w-100  " />
+        <img src="/assets/star.png" alt="star icon" 
+        class=" hidden md:block border-0  md:h-40 md:w-100 " />
+        <img src="/assets/star.png" alt="star icon" 
+        class="hidden md:block md:bg-white border-0 md:h-40 md:w-100 " />
+       </figure>
+    <div class="paper border-white">
+      <div class="flex justify-between">
+        <h3>Good afternoon!<i class='bxr  bxs-star'  style='color:#fafa0b' ></i> </h3>
+        <p>13/06/2025</p>
+      </div>
+      <p class="mt-2">Go ahead and plan your day and remember Small progress is still progress!</p>
+      <form class="mt-4 p-2">
+        <div class="flex gap-2">
+          <input
+            type="text"
+            name="addTask"
+            id="addTask"
+            placeholder="task name"
+            class="w-20"
+          />
+          <input
+            type="text"
+            name="time"
+            id="time"
+            placeholder="time"
+            class="w-16"
+          />
+          <button>add <i class='bxr  bx-plus-circle'  style='color:#161614'></i></i> </button>
+        </div>
+      </form>
+      <table>
+       <thead>
+        <tr>
+            <th>Check </th>
+            <th>Name</th>
+            <th>time</th>
+            <th>Priority</th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+            <td>
+                <button><i class='bxr  bxs-check'  style='color:#000000'></i>  </button>
+            </td>
+            <td>Meditate</td>
+            <td>10:00am-11:00am</td>
+            <td>Important</td>
+        </tr>
+       </tbody>
+      </table>
+
+    </div>
+  </body>
+</html>
