@@ -26,4 +26,5 @@ Organize everything in one place:
 -  BoxIcons - Crisp modern icons
   
 ## Screenshots
-![Screenshot 2025-06-12 183403](https://github.com/user-attachments/assets/098e0841-b26d-4393-b431-f8e8e40195af)
+https://github.com/user-attachments/assets/7c45ec22-108b-40fc-8284-99bf3f746509
+
