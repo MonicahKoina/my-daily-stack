@@ -7,6 +7,7 @@ let priorityElem = document.getElementById("priority");
 let dateElem = document.getElementById("date");
 let newDate = new Date();
 dateElem.textContent = newDate.toDateString();
+
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
 function saveTasks() {
