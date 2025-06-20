@@ -20,24 +20,19 @@ formElem.addEventListener("submit", function (e) {
     if (matchingCard) {
 
         let ths = matchingCard.querySelectorAll("th")
-        let targetTH = [...ths].find(th => th.dataset.meal === meal);
+        // let targetTH = [...ths].find(th => th.dataset.meal === meal);
         let table = matchingCard.querySelector(".meal-table")
         let tbody = document.createElement("tbody")
         let tr = document.createElement("tr")
         tbody.appendChild(tr);
         table.appendChild(tbody);
+        tr.innerHTML = `<td></td><td></td><td></td>`
+        let tdIndex = meal === "BREAKFAST" ? 0 : meal === "LUNCH" ? 1 : 2;
+        let td = tr.children[tdIndex]
+        td.textContent = food;
 
-        if (targetTH) {
-            let td1 = document.createElement("td")
-            td1.innerHTML = food
-            tr.appendChild(td1);
-            let td2 = document.createElement("td")
-            td2.innerHTML = food
-            tr.appendChild(td2);
-            let td3 = document.createElement("td")
-            td3.innerHTML = food
-            tr.appendChild(td3);
-        }
+
+
 
 
 
